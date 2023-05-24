@@ -17,8 +17,8 @@ echo 'Finished cloning'
 
 # check that there is a ListExamples file
 if [ -f ./student-submission/ListExamples.java ]; then
-  cp  -r ./student-submission/ ./grading-area
-  cp -r ./lib ./grading-area
+  cp  -r ./student-submission/. ./grading-area
+  cp -r ./lib/. ./grading-area
   cp ./TestListExamples.java ./grading-area/TestListExamples.java
   echo "Done copying"
 

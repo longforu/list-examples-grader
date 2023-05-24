@@ -1,6 +1,6 @@
 JUnit version 4.13.2
 .E.E.E
-Time: 2.244
+Time: 2.105
 There were 3 failures:
 1) testFilter1(TestListExamples)
 java.lang.AssertionError: expected:<[a, b, c]> but was:<[c, b, a]>
@@ -11,7 +11,8 @@ java.lang.AssertionError: expected:<[a, b, c]> but was:<[c, b, a]>
 	at TestListExamples.testFilter1(TestListExamples.java:29)
 2) testMergeRightEnd(TestListExamples)
 org.junit.runners.model.TestTimedOutException: test timed out after 500 milliseconds
-	at java.base@17.0.1/java.util.Arrays.copyOf(Arrays.java:3512)
+	at java.base@17.0.1/java.lang.System.arraycopy(Native Method)
+	at java.base@17.0.1/java.util.Arrays.copyOf(Arrays.java:3514)
 	at java.base@17.0.1/java.util.Arrays.copyOf(Arrays.java:3481)
 	at java.base@17.0.1/java.util.ArrayList.grow(ArrayList.java:237)
 	at java.base@17.0.1/java.util.ArrayList.grow(ArrayList.java:244)
@@ -21,13 +22,7 @@ org.junit.runners.model.TestTimedOutException: test timed out after 500 millisec
 	at app//TestListExamples.testMergeRightEnd(TestListExamples.java:17)
 3) testMerge1(TestListExamples)
 org.junit.runners.model.TestTimedOutException: test timed out after 1000 milliseconds
-	at java.base@17.0.1/java.util.Arrays.copyOf(Arrays.java:3512)
-	at java.base@17.0.1/java.util.Arrays.copyOf(Arrays.java:3481)
-	at java.base@17.0.1/java.util.ArrayList.grow(ArrayList.java:237)
-	at java.base@17.0.1/java.util.ArrayList.grow(ArrayList.java:244)
-	at java.base@17.0.1/java.util.ArrayList.add(ArrayList.java:454)
-	at java.base@17.0.1/java.util.ArrayList.add(ArrayList.java:467)
-	at app//ListExamples.merge(ListExamples.java:42)
+	at app//ListExamples.merge(ListExamples.java:43)
 	at app//TestListExamples.testMerge1(TestListExamples.java:37)
 
 FAILURES!!!
